@@ -1,0 +1,152 @@
+.createPollingBorder {
+  z-index: 10001;
+}
+.createPolling {
+  min-height: 100vh;
+  position: fixed;
+  padding: 0px 50px 0 50px;
+  background: transparent;
+}
+.kotakPollings {
+  overflow: scroll;
+  height: 100vh;
+  border: 2px solid var(--text);
+  border-bottom: 2px solid transparent;
+  background: var(--bg);
+  padding: 50px;
+}
+.hr {
+  z-index: -1;
+}
+.besarImageProfile {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userName {
+  font-size: 15px;
+  color: var(--bg);
+}
+.textCreate {
+  font-size: 25px;
+  color: var(--bg);
+  font-weight: 700;
+}
+.backgroundCreate {
+  background: var(--button);
+  border-radius: 15px;
+}
+.kotakImageCreate {
+  height: 400px;
+  overflow: hidden;
+}
+.labelImage {
+  cursor: pointer;
+}
+.iconImage {
+  font-size: 50px;
+  color: var(--text);
+}
+.inputanImage {
+  position: absolute;
+  opacity: 0;
+}
+.inputCreate {
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 2px solid var(--text);
+  color: var(--text);
+  font-size: 18px;
+}
+.labelInputCreate {
+  font-size: 15px;
+  color: var(--text);
+}
+.inputCreate:focus {
+  outline: none; /* Menghilangkan outline saat input dalam mode fokus */
+}
+.labelAdd {
+  color: var(--bg);
+  font-size: 15px;
+  background: var(--button);
+  cursor: pointer;
+}
+.kotakIsiPollings {
+  min-height: 100px;
+  border: 2px dashed var(--text);
+  border-radius: 15px;
+}
+.isiPolls {
+  font-size: 18px;
+  color: var(--bg);
+  background: var(--button);
+}
+.submitNewPolls {
+  font-size: 18px;
+  color: var(--bg);
+  background: var(--button);
+  cursor: pointer;
+}
+.iconExit {
+  color: var(--text);
+  font-size: 25px;
+}
+.closeButton {
+  font-size: 18px;
+  cursor: pointer;
+  color: rgb(97, 95, 95);
+}
+
+@media (max-width: 1200px) {
+  .leftSide {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .kotakPollings {
+    padding: 20px 10px 20px 10px;
+  }
+}
+@media (max-width: 768px) {
+  .kotakPollings {
+    padding: 20px 10px 20px 10px;
+  }
+  .createPolling {
+    min-height: 100vh;
+    position: absolute;
+    padding: 0px;
+  }
+  .textCreate {
+    font-size: 22px;
+  }
+}
+
+/* Scroll bar */
+/* Hide scrollbar track */
+.kotakPollings::-webkit-scrollbar {
+  width: 5px; /* Set a width for the scrollbar */
+  max-height: 0px;
+}
+
+/* Handle */
+.kotakPollings::-webkit-scrollbar {
+  background-color: var(--text, #000); /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners for the handle */
+}
+
+/* Handle on hover */
+.kotakPollings::-webkit-scrollbar {
+  background-color: var(--bg, #ccc); /* Change color on hover */
+}
+
+/* Track */
+.kotakPollings::-webkit-scrollbar {
+  background: transparent; /* Color of the scrollbar track */
+}
+
+/* Track on hover */
+.kotakPollings::-webkit-scrollbar {
+  border-radius: 5px;
+  background: rgba(22, 22, 22, 0); /* Change color on hover */
+}

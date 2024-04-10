@@ -1,0 +1,49 @@
+{
+  "routes": [
+    {
+      "src": "/auth/registerUser",
+      "dest": "${VITE_REGISTER_API}"
+    },
+    {
+      "src": "/auth/loginUser",
+      "dest": "${VITE_LOGIN_API}"
+    },
+    {
+      "src": "/auth/loginGuest",
+      "dest": "${VITE_LOGIN_GUEST}"
+    },
+    {
+      "src": "/polls/getAllPolls",
+      "dest": "${VITE_GET_ALL_POLLS}"
+    },
+    {
+      "src": "/polls/getAllPollsDone",
+      "dest": "${VITE_GET_ALL_POLLS_DONE}"
+    },
+    {
+      "src": "/polls/createPolls",
+      "dest": "${VITE_CREATE_POLLS}"
+    },
+    {
+      "src": "/polls/statusPolls",
+      "dest": "${VITE_STATUS_POLLS}"
+    },
+    {
+      "src": "/polls/deletePolls",
+      "dest": "${VITE_DONE_POLLS}"
+    },
+    {
+      "src": "/polls/addVote",
+      "dest": "${VITE_ADD_VOTE}"
+    },
+    {
+      "src": "/",
+      "dest": "${VITE_SOCKET_PORT}"
+    },
+
+    {
+      "src": "/[^.]+",
+      "dest": "/"
+    }
+  ]
+}

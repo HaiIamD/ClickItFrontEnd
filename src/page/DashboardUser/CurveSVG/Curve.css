@@ -1,0 +1,10 @@
+.svgCurve {
+  position: fixed;
+  top: 0;
+  left: -99px;
+  width: 100px;
+  height: 100%;
+  fill: var(--bg);
+  stroke: none;
+  z-index: 3;
+}

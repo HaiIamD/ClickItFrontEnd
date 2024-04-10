@@ -1,0 +1,246 @@
+.livePollingsSecions {
+  position: fixed;
+  z-index: 13;
+  top: 0;
+  background: rgba(0, 0, 0, 0.13);
+  min-height: 100%;
+  min-width: 100%;
+}
+.kotakLivePollings {
+  background: var(--shadow);
+
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.borderExitIcon {
+  padding: 30px 30px 40px 0px;
+}
+.exitIcon {
+  background: var(--bg);
+  font-size: 20px;
+  border-radius: 50%;
+  color: var(--text);
+  height: 1.7rem;
+  width: 1.7rem;
+  cursor: pointer;
+}
+.livePollings {
+  min-height: 100vh;
+}
+
+.kotakImageCreate {
+  max-height: 300px;
+  box-shadow: 0px 0px 3px 0px var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.kotakLiveComentar {
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.kotakLiveComentar::-webkit-scrollbar {
+  width: 5px; /* Set a width for the scrollbar */
+  max-height: 0px;
+}
+.kotakInput {
+  border-radius: 15px;
+  border: 2px solid var(--text);
+  padding: 10px 10px 10px 10px;
+}
+.inputLiveComment {
+  background: transparent;
+  border: none;
+  color: var(--text);
+}
+.inputLiveComment:focus {
+  border: none; /* Tetapkan border ke none saat input aktif */
+  outline: none;
+}
+.pilihan {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-size: 15px;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--shadow);
+  overflow: hidden;
+}
+.persentaseBar {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  background-color: #dfd7d7;
+}
+.persentaseBarAcitve {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  background-color: rgb(130, 255, 92);
+}
+.persentase {
+  color: var(--text);
+  z-index: 2;
+}
+.titleLive {
+  font-size: 20px;
+  color: var(--bg);
+}
+.kotakChat {
+  background: var(--bg);
+  border-radius: 15px;
+  padding: 20px 40px 20px 40px;
+}
+.teksInside {
+  font-size: 15px;
+  color: var(--text);
+}
+.teksInsideOnline {
+  font-size: 12px;
+  color: var(--text);
+}
+.warna {
+  color: var(--text);
+}
+.isiChat {
+  background: var(--shadow);
+  color: var(--bg);
+  font-size: 13px;
+  word-wrap: break-word;
+  border-radius: 15px 15px 15px 0;
+}
+.isiChatSendiri {
+  background: var(--bg);
+  color: var(--text);
+  font-size: 13px;
+  border: 1px solid var(--text);
+  word-wrap: break-word;
+  border-radius: 15px 15px 0 15px;
+}
+.absolute {
+  display: none;
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+.backgroundCreateLive {
+  background: var(--bg);
+  color: var(--text);
+  border-radius: 15px;
+}
+
+.authorName {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--text);
+}
+.imageLivePollings {
+  min-height: 400px;
+  min-width: 300px;
+}
+.pengirimChat {
+  font-size: 13px;
+}
+.makeAbsolute {
+  margin-left: 10px;
+}
+@media (max-width: 1700px) {
+  .kotakLivePollings {
+    padding-bottom: 40px;
+  }
+  .borderExitIcon {
+    padding: 20px 40px 20px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  .titleLive {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .kotakChat {
+    padding: 20px 40px 20px 40px;
+  }
+}
+@media (max-width: 992px) {
+  .makeAbsolute {
+    display: none;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+  }
+
+  .backAbsolute {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: var(--bg);
+    top: 0px;
+    padding: 0px 10px 0px 10px;
+    z-index: 3;
+  }
+  .absolute {
+    display: flex;
+    justify-content: center;
+    background: var(--button);
+    color: var(--bg);
+    height: 50px;
+    width: 10px;
+    overflow: auto;
+  }
+  .kotakLivePollings {
+    background: var(--shadow);
+    border-radius: 0px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .leftImageSide {
+    padding: 10px;
+  }
+  .borderExitIcon {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .borderExitIcon {
+    padding: 20px 10px 30px 0px;
+  }
+  .backgroundCreateLive {
+    background: var(--text);
+    color: var(--bg);
+    border-radius: 0px;
+  }
+  .authorName {
+    color: var(--bg);
+  }
+  .kotakLiveComentar {
+    height: 400px;
+  }
+  .kotakChat {
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (max-width: 576px) {
+  .livePollings {
+    margin-top: 60px;
+  }
+  .kotakInput {
+    padding: 15px 20px 15px 20px;
+  }
+}

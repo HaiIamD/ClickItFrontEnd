@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+:root {
+  --bg: #ffffff;
+  --button: #0f0f0f;
+  --text: #0f0f0f;
+  --shadow: #252525;
+}
+[data-theme='dark'] {
+  --bg: #252525;
+  --button: #f682a5;
+  --text: #ffffff;
+  --shadow: #0f0f0f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+  scroll-behavior: smooth;
+}

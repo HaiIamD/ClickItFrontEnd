@@ -1,0 +1,336 @@
+.homePage {
+  margin-top: 150px;
+  margin-bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.titleHomePage {
+  color: var(--text);
+  font-weight: bold;
+  font-size: 120px;
+  color: var(--text);
+
+  cursor: default;
+  line-height: 5.9rem;
+}
+
+.subTitleHomePage {
+  max-width: 850px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  cursor: default;
+}
+.subtitleHomePageMini {
+  text-decoration: none;
+  padding: 15px;
+  background: var(--button);
+  color: var(--bg);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.warnaBackground2 {
+  background: rgb(150, 203, 243);
+  height: 20rem;
+  width: 30rem;
+  position: absolute;
+  filter: blur(200px);
+  border-radius: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.containerRelative {
+  height: 300vh;
+  position: relative;
+  z-index: -1;
+}
+.imageBorder {
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  height: 100vh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.absoluteCoverImage {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerImage {
+  position: relative;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.headerImage2 {
+  border-radius: 15px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -30vh;
+  left: -13vw;
+  width: 35vw;
+  height: 80vh;
+}
+.headerImage3 {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -45vh;
+  right: -20vw;
+  width: 40vw;
+  height: 120vh;
+}
+.headerImage4 {
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 55vh;
+  left: -20vw;
+  width: 40vw;
+  height: auto;
+}
+.headerImage5 {
+  border-radius: 15px;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -50vh;
+  right: -30vw;
+  width: 60vw;
+  height: 70vh;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.HeadContainer {
+  background-color: var(--bg);
+}
+
+/* BodySide */
+.bodyImageBorder {
+  max-height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BodySide {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.textBodySide {
+  font-size: 35px;
+  max-width: 500px;
+}
+
+/* Bento Side */
+.kotakTitleBento {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.titleBentoSide {
+  text-align: center;
+  max-width: 1000px;
+}
+
+.number {
+  font-size: 40px;
+  color: var(--text);
+}
+.ballFounder {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bento {
+  padding: 3px;
+}
+.titleBanner,
+.firstbento {
+  color: var(--bg);
+  font-size: 50px;
+  max-width: 400px;
+}
+.bentoInsideOne {
+  height: 400px;
+  background: var(--text);
+  border-radius: 7px;
+  padding: 10px;
+}
+.bentoInside {
+  height: 400px;
+  background: #f1f1f1;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+/* JoinWithUs */
+.titleJoinWithUs {
+  background: var(--text);
+  color: var(--bg);
+}
+.imageBackground {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 0;
+  transition: all 200ms ease-in;
+}
+.imageBackground:hover {
+  scale: 1.02;
+}
+
+.buttonLoginJoin {
+  background: rgba(0, 0, 0, 0.623);
+  color: var(--bg);
+  font-size: 25px;
+  text-align: center;
+}
+.textJoin {
+  font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+  .containerRelative {
+    height: 200vh;
+  }
+}
+@media (max-width: 960px) {
+  .BodySide {
+    margin-top: 0px;
+    margin-top: 0px;
+  }
+  .titleHomePage {
+    font-size: 120px;
+  }
+  .subTitleHomePage {
+    font-size: 25px;
+    max-width: 650px;
+  }
+  .subtitleHomePageMini {
+    margin-bottom: 10px;
+  }
+  .titleBody {
+    font-size: 25px;
+    max-width: 100%;
+  }
+  .ballAbsolute {
+    height: 0px;
+    width: 0px;
+  }
+
+  .bentoInsideOne {
+    height: 400px;
+  }
+  .bentoInside {
+    height: 300px;
+  }
+
+  .firstbento {
+    font-size: 40px;
+  }
+  .BodySide {
+    flex-direction: column-reverse;
+  }
+  .textBodySide {
+    max-width: 1000px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .bodyImageBorder {
+    max-height: 400px;
+    overflow: hidden;
+  }
+  .kotakTitleBento {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .titleHomePage {
+    font-size: 100px;
+  }
+  .subTitleHomePage {
+    font-size: 20px;
+    max-width: 450px;
+  }
+  .subtitleHomePageMini {
+    margin-bottom: 25px;
+  }
+  .titleBody {
+    font-size: 25px;
+  }
+
+  .borderImageBody {
+    max-height: 400px;
+  }
+  .headerImage {
+    width: 70vw;
+    height: 70vh;
+  }
+  .headerImage2 {
+    top: -25vh;
+    left: -40vw;
+    width: 75vw;
+    height: 50vh;
+  }
+  .headerImage3 {
+    top: -45vh;
+    right: -50vw;
+    width: 70vw;
+    height: 120vh;
+  }
+  .headerImage4 {
+    top: 55vh;
+    left: -70vw;
+    width: 90vw;
+    height: auto;
+  }
+  .headerImage5 {
+    bottom: -40vh;
+    right: -50vw;
+    width: 90vw;
+    height: 70vh;
+  }
+  .warnaBackground {
+    height: 20rem;
+    width: 20rem;
+  }
+}

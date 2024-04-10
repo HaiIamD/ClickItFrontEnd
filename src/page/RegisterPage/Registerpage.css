@@ -1,0 +1,17 @@
+.registerPage {
+  min-height: 100vh;
+  background-image: url('assets/loginimage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightRegister {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}

@@ -1,0 +1,120 @@
+.Navbar {
+  position: fixed;
+  top: 0px;
+  backdrop-filter: blur(0.1px);
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0.205), rgba(255, 255, 255, 0)); */
+  border: none;
+  z-index: 10;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+.NavbarBg {
+  position: fixed;
+  top: 0px;
+  background: var(--text);
+  z-index: 1;
+  transition: all 200ms ease-in;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.titleNavbar {
+  font-size: 35px;
+  /* font-family: 'Telma', cursive; */
+  color: var(--bg);
+  font-weight: 600;
+}
+.buttonNavbar {
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  height: 40px;
+  width: 100px;
+}
+.buttonNavbar,
+.buttonNavbar2,
+.buttonNavbar1 {
+  /* background: #f682a5; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: var(--bg);
+  z-index: 10;
+}
+
+.buttonNavbar2 {
+  position: absolute;
+  background-color: var(--bg);
+  color: var(--text);
+  height: 40px;
+  width: 100px;
+}
+
+.navbarMenu {
+  position: absolute;
+  background-color: var(--button);
+  right: 25px;
+  border-radius: 25px;
+
+  border: 2px solid var(--bg);
+  z-index: 4;
+}
+
+.navbarMenuBack {
+  position: absolute;
+  background-color: var(--button);
+  right: 25px;
+  border-radius: 25px;
+  border: 2px solid var(--text);
+  box-shadow: 0px 0px 2px 0px var(--bg);
+  z-index: 5;
+}
+
+.menuNavbarTitle {
+  /* font-family: 'Telma', cursive; */
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--bg);
+}
+
+.menuNavbar {
+  background-color: var(--bg);
+  color: var(--text);
+  text-align: center;
+  border-radius: 15px;
+  padding: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 300ms ease;
+  z-index: 5;
+  font-size: 17px;
+}
+.menuNavbar:hover {
+  background-color: var(--text);
+  color: var(--bg);
+  border: 1px solid var(--bg);
+}
+.colorNavbar {
+  color: var(--bg);
+}
+
+.borderImageProfile {
+  height: 9rem;
+  width: 9rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 5;
+}
+.namaUserNavbar {
+  color: var(--bg);
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .Navbar {
+    background: transparent;
+  }
+}

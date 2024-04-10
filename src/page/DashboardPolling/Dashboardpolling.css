@@ -1,0 +1,166 @@
+.swiper-pagination-bullet-active {
+  background-color: #000 !important; /* Memberikan warna latar belakang pada bullet pagination */
+}
+.Dashboard {
+  margin-top: 70px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.titleDashboard {
+  font-size: 42px;
+  color: var(--text);
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.borderImageSlider {
+  height: 600px;
+}
+.imageSlider {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.borderImages {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-right: 2px;
+  overflow: hidden;
+}
+.allAudience {
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  text-decoration: none;
+}
+.titlePollings {
+  font-size: 27px;
+  color: var(--bg);
+  word-wrap: break-word;
+}
+.titleJoin {
+  font-size: 28px;
+  color: var(--bg);
+  text-decoration: none;
+}
+.authors {
+  color: var(--bg);
+  font-size: 15px;
+}
+.rightSidePollinsgBanner {
+  flex-wrap: wrap;
+  background: var(--text);
+  font-size: 13px;
+  color: var(--text);
+  padding: 50px;
+}
+
+.tagActive {
+  background: var(--text);
+  color: var(--bg);
+  font-size: 25px;
+}
+
+.cardPollings {
+  min-height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0px 0px 4px 0px var(--shadow);
+  cursor: pointer;
+}
+.audienceCard {
+  background: var(--text);
+  color: var(--bg);
+  padding-left: 15px;
+  padding-right: 15px;
+  /* box-shadow: 0px 0px 5px 0px var(--shadow); */
+}
+.titlePollingsCard {
+  font-size: 19px;
+  color: var(--text);
+  padding: 5px;
+  text-align: center;
+  word-wrap: break-word;
+}
+.labelArrow {
+  font-size: 25px;
+  color: var(--bg);
+}
+
+@media (max-width: 992px) {
+  .titleDashboard {
+    font-size: 35px;
+  }
+  .imageSlider {
+    flex-wrap: wrap;
+    align-content: end;
+  }
+  .rightSidePollinsgBanner {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .titleJoin {
+    font-size: 22px;
+    color: var(--bg);
+  }
+  .labelArrow {
+    font-size: 22px;
+  }
+  .tagActive {
+    text-align: center;
+  }
+  .cardPollings {
+    min-height: 350px;
+  }
+  .allAudience {
+    background: var(--bg);
+    color: var(--text);
+    font-size: 13px;
+  }
+  .audienceCard {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media (max-width: 576px) {
+  .Dashboard {
+    margin-top: 90px;
+  }
+  .titleDashboard {
+    font-size: 28px;
+  }
+  .titlePollings {
+    font-size: 20px;
+  }
+  .titleJoin {
+    font-size: 20px;
+    color: var(--bg);
+  }
+  .labelArrow {
+    font-size: 20px;
+  }
+  .rightSidePollinsgBanner {
+    padding: 20px;
+  }
+  .cardPollings {
+    min-height: 300px;
+  }
+  .titlePollingsCard {
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+}

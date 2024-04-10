@@ -1,0 +1,77 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titleLogin {
+  font-weight: 700;
+  font-size: 50px;
+}
+.borderImage {
+  max-height: 100vh;
+  overflow: hidden;
+}
+.ClickIt {
+  color: var(--text);
+  font-weight: 700;
+}
+.labelInput {
+  font-size: 18px;
+}
+.inputLogin {
+  background: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--text);
+  color: var(--text);
+  font-size: 17px;
+}
+.inputLogin:focus {
+  outline: none; /* Menghilangkan outline saat input dalam mode fokus */
+}
+.textLogin {
+  font-size: 17px;
+  color: var(--text);
+  justify-content: end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.buttonLogin {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: var(--button);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .borderImage {
+    height: 40vh;
+    margin-bottom: 20px;
+  }
+  .loginPage {
+    background-image: url('assets/loginimage.jpg');
+  }
+  .kotakLogin {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .labelInput {
+    font-size: 15px;
+  }
+  .textLogin {
+    font-size: 15px;
+    justify-content: start;
+  }
+  .borderImage {
+    display: none;
+    height: 0vh;
+    margin-bottom: 20px;
+  }
+}
