@@ -31,8 +31,6 @@ function Livepolling({ setShowPollings }) {
   const [onlineUser, setOnlineUser] = useState(0);
   const commentAreaRef = useRef(null);
 
-  console.log(options);
-
   const voteChoice = async (voteId) => {
     try {
       const fetchData = await fetch(`${import.meta.env.VITE_ADD_VOTE}/${dataPolls._id}/${voteId}`, {
@@ -60,9 +58,11 @@ function Livepolling({ setShowPollings }) {
     }
   };
 
+  const socket = io(`https://backendclickit.vercel.app`, {
+    reconnectionAttempts: 5,
+  });
   // Socket Configuration =========================
   useEffect(() => {
-    const socket = io(`${import.meta.env.VITE_SOCKET_PORT}`);
     // mengirim User Id
     socket.emit('addUser', user._id, dataPolls._id);
     // mendapatkan Jumlah User yang online
@@ -79,7 +79,6 @@ function Livepolling({ setShowPollings }) {
   }, []);
 
   const handleKeyDown = (event) => {
-    const socket = io(`${import.meta.env.VITE_SOCKET_PORT}`);
     if (event.key === 'Enter') {
       const data = {
         pollId: dataPolls._id,
@@ -93,7 +92,6 @@ function Livepolling({ setShowPollings }) {
   };
 
   const disconnectChat = () => {
-    const socket = io(`${import.meta.env.VITE_SOCKET_PORT}`);
     socket.emit('disconnectRequest', dataPolls._id);
     setShowPollings(true);
   };

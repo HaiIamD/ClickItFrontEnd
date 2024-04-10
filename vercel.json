@@ -36,10 +36,6 @@
       "src": "/polls/addVote",
       "dest": "${VITE_ADD_VOTE}"
     },
-    {
-      "src": "/",
-      "dest": "${VITE_SOCKET_PORT}"
-    },
 
     {
       "src": "/[^.]+",
