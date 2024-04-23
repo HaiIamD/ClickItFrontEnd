@@ -37,7 +37,7 @@ function Createpollings({ swipeCreate, updateData }) {
     try {
       const fetchData = await fetch(`${import.meta.env.VITE_CREATE_POLLS}/${user._id}`, {
         method: 'POST',
-        headers: { Authorization: `clickIt ${token}` },
+
         body: inputanCreate,
       });
       if (fetchData.ok) {

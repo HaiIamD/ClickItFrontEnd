@@ -37,7 +37,6 @@ function Livepolling({ setShowPollings }) {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `clickIt ${token}`,
         },
         body: JSON.stringify({
           userId: user._id,
